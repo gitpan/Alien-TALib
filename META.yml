@@ -1,0 +1,30 @@
+---
+abstract: 'Alien module for ta-lib from http://ta-lib.org'
+author:
+  - 'Vikas N. Kumar <vikas@cpan.org>'
+build_requires:
+  Alien::Base::ModuleBuild: 0
+  Data::Dumper: 0
+  Test::More: 0
+configure_requires:
+  Alien::Base: 0
+  Alien::Base::ModuleBuild: 0
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.132661'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Alien-TALib
+provides:
+  Alien::TALib:
+    file: lib/Alien/TALib.pm
+    version: 0.01
+requires:
+  Alien::Base: 0
+  File::ShareDir: 1.00
+  perl: v5.10.0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
