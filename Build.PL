@@ -16,11 +16,13 @@ my $build = Alien::Base::ModuleBuild->new(
         'Module::Build' => 0,
         'Alien::Base' => 0,
         'Alien::Base::ModuleBuild' => 0,
+        'Software::License' => 0,
     },
     build_requires => {
         'Alien::Base::ModuleBuild' => 0,
         'Test::More' => 0,
-        'Data::Dumper' => 0,
+        'Module::Build' => 0,
+        'Software::License' => 0,
     },
     requires => {
         'perl' => '5.10.0',
@@ -46,10 +48,15 @@ my $build = Alien::Base::ModuleBuild->new(
     ],
     alien_provides_cflags => "-DHAVE_CONFIG_H",
     alien_provides_libs => "-lpthread -ldl -lta_lib",
+    meta_merge => {
+        resources => {
+            repository => "https://github.com/vikasnkumar/Alien-TALib",
+            bugtracker => "https://github.com/vikasnkumar/Alien-TALib/issues",
+        },
+    },
 );
 
 $build->create_build_script;
-$build->dispatch('clean');
 $build->dispatch('distmeta');
 $build->dispatch('manifest');
 

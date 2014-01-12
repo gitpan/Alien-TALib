@@ -17,7 +17,8 @@
       "build" : {
          "requires" : {
             "Alien::Base::ModuleBuild" : "0",
-            "Data::Dumper" : "0",
+            "Module::Build" : "0",
+            "Software::License" : "0",
             "Test::More" : "0"
          }
       },
@@ -25,7 +26,8 @@
          "requires" : {
             "Alien::Base" : "0",
             "Alien::Base::ModuleBuild" : "0",
-            "Module::Build" : "0"
+            "Module::Build" : "0",
+            "Software::License" : "0"
          }
       },
       "runtime" : {
@@ -39,14 +41,20 @@
    "provides" : {
       "Alien::TALib" : {
          "file" : "lib/Alien/TALib.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/vikasnkumar/Alien-TALib/issues"
+      },
       "license" : [
          "http://dev.perl.org/licenses/"
-      ]
+      ],
+      "repository" : {
+         "url" : "https://github.com/vikasnkumar/Alien-TALib"
+      }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
