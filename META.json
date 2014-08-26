@@ -26,7 +26,6 @@
             "File::Which" : "0",
             "LWP::Simple" : "0",
             "Module::Build" : "0",
-            "Software::License" : "0",
             "Test::More" : "0"
          }
       },
@@ -40,8 +39,7 @@
             "File::Spec" : "0",
             "File::Which" : "0",
             "LWP::Simple" : "0",
-            "Module::Build" : "0",
-            "Software::License" : "0"
+            "Module::Build" : "0"
          }
       },
       "runtime" : {
@@ -59,7 +57,7 @@
    "provides" : {
       "Alien::TALib" : {
          "file" : "lib/Alien/TALib.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       }
    },
    "release_status" : "stable",
@@ -74,5 +72,5 @@
          "url" : "https://github.com/vikasnkumar/Alien-TALib"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }

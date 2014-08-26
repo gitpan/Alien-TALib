@@ -13,7 +13,6 @@ build_requires:
   File::Which: 0
   LWP::Simple: 0
   Module::Build: 0
-  Software::License: 0
   Test::More: 0
 configure_requires:
   Archive::Tar: 0
@@ -25,7 +24,6 @@ configure_requires:
   File::Which: 0
   LWP::Simple: 0
   Module::Build: 0
-  Software::License: 0
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4207, CPAN::Meta::Converter version 2.132661'
 license: perl
@@ -36,7 +34,7 @@ name: Alien-TALib
 provides:
   Alien::TALib:
     file: lib/Alien/TALib.pm
-    version: 0.05
+    version: 0.06
 requires:
   Archive::Tar: 0
   Archive::Zip: 0
@@ -49,4 +47,4 @@ resources:
   bugtracker: https://github.com/vikasnkumar/Alien-TALib/issues
   license: http://dev.perl.org/licenses/
   repository: https://github.com/vikasnkumar/Alien-TALib
-version: 0.05
+version: 0.06
