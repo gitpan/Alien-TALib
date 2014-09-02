@@ -1,15 +1,9 @@
 package Alien::TALib;
 use strict;
 use warnings;
-use File::Which 'which';
-use File::Spec;
-use LWP::Simple qw(getstore is_success);
-use Archive::Tar;
-use Archive::Zip;
 use Alien::TALib::ConfigData;
-use Cwd ();
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 $VERSION = eval $VERSION;
 
 sub new {
@@ -63,7 +57,7 @@ C<Makefile.PL> file if you're using ExtUtils::MakeMaker.
 
 =head1 VERSION
 
-0.06
+0.07
 
 =head1 DESCRIPTION
 
